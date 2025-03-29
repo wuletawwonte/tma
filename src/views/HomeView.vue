@@ -1,3 +1,6 @@
+<script setup>
+import WebApp from '@twa-dev/sdk';
+</script>
 <template>
   <main class="pt-4">
     <div class="flex justify-center">
@@ -18,10 +21,10 @@
         </span>
 
         <div class="flex gap-4">
-          <a class="btn btn-primary">
+          <button class="btn btn-primary" @click="WebApp.showAlert('Hello there')">
             <i class="fa-solid fa-rocket"></i>
             Get started
-          </a>
+          </button>
 
           <code class="btn btn-soft border border-neutral">
             $ npm i app-name
